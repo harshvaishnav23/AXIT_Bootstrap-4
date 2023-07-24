@@ -1,18 +1,21 @@
-
-:root{
+:root {
     --color-primary: #ff8b38;
-    --color-secondary: ;
-    --color-dark : #000;
+    --color-secondary: #f5f5f5;
+    --color-placeholder: #bdbdbd;
+    --color-dark: #000;
     --color-white: #fff;
 }
 
 
-.mainHeader{
+/* ###################### CSS HEADER SECTION ############################# */
+
+
+.mainHeader {
     background-color: var(--color-dark);
 }
 
 .mainHeader .bg-light {
-    background-color: transparent!important;
+    background-color: transparent !important;
 }
 
 
@@ -23,17 +26,17 @@
     position: relative;
 }
 
-.mainHeader .navbar-nav .active>.nav-link,
-.mainHeader .navbar-nav .nav-link.active,
-.mainHeader .navbar-nav .nav-link.show,
-.mainHeader .navbar-nav .show>.nav-link,
+.mainHeader .navbar-light .navbar-nav .active>.nav-link,
+.mainHeader .navbar-light .navbar-nav .nav-link.active,
+.mainHeader .navbar-light .navbar-nav .nav-link.show,
+.mainHeader .navbar-light .navbar-nav .show>.nav-link,
 .mainHeader .navbar-nav .nav-link:hover,
 .mainHeader .navbar-nav .nav-link:focus,
-.mainHeader .navbar-nav .nav-link:active{
+.mainHeader .navbar-nav .nav-link:active {
     color: var(--color-primary);
 }
 
-.mainHeader .navbar-nav .nav-link::after{
+.mainHeader .navbar-nav .nav-link::after {
     position: absolute;
     content: '';
     left: 0;
@@ -44,7 +47,131 @@
     transition: all .3s ease-in-out;
 }
 
-.mainHeader .navbar-nav .nav-link:hover:after{
+
+.mainHeader .navbar-nav .nav-link:hover::after,
+.mainHeader .navbar-nav .nav-link:focus::after,
+.mainHeader .navbar-nav .active .nav-link::after {
     width: 100%;
+}
+
+.mainHeader .navbar-light .navbar-toggler {
     color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.mainHeader .navbar-light .navbar-toggler i {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+/* ###################### CSS HEROIMG SECTION ############################# */
+
+.section {
+    padding: 12rem 0;
+}
+
+.heroImg {
+    height: calc(100vh - 57.7px);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bgImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mainHeading {
+    font-size: 2.25rem;
+    color: var(--color-white);
+}
+
+.heroInfo .short-border {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.short-border::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 65px;
+    height: 3px;
+    background: var(--color-white);
+}
+
+.heroImgPara {
+    color: var(--color-white);
+    font-weight: 300;
+    margin-bottom: 1.875rem;
+}
+
+.heroInfo .primary {
+    padding: 15px 30px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid var(--color-white);
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.heroInfo .primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-primary);
+    z-index: -1;
+    transition: all .5s ease-in-out;
+}
+
+.heroInfo .primary:hover::after,
+.heroInfo .primary:focus::after,
+.heroInfo .primary:active::after {
+    width: 100%;
+}
+
+.trialForm .card-header {
+    background-color: var(--color-secondary);
+
+}
+
+
+.trialForm .card-header h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.trialForm .card-header span {
+    color: var(--color-primary);
+}
+
+.secondary {
+    border: 0;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 20px;
+}
+
+.heroImg .card {
+    border: 0;
+    overflow: hidden;
+}
+
+.trialForm .card-footer {
+    padding: 0;
+    background-color: var(--color-primary);
+   
+}
+
+.trialForm input{
+    border: 0px;
+    border-bottom: 1px solid var(--color-placeholder);
+    border-radius: 0px;
+}
+
+.trialForm input::placeholder{
+    color: var(--color-placeholder);
 }
