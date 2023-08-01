@@ -220,3 +220,101 @@
     transform: translateY(-2px);
     border: 2px solid var(--color-primary);
 }
+
+
+/* ###################### CSS SUB LIST FEATURE 2 SECTION ############################# */
+
+.featureImg{
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in-out;
+}
+
+.featureImg:hover,
+.featureImg:focus,
+.featureImg:active{
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px) scale(1.03);
+}
+
+.cloudIcon{
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    border: 2px solid var(--color-primary);
+    line-height: 2.5rem;
+    border-radius: 50%;
+}
+
+.cloudIcon i{
+    font-size: 1.125rem;
+    color: var(--color-primary);
+}
+
+.awesome .cloudIcon{
+    height: 4.063rem;
+    width: 4.063rem;
+    line-height: 4.063rem;
+}
+
+.awesome .cloudIcon i{
+    font-size: 1.563rem;
+}
+
+/* ###################### CSS PRICING SECTION ############################# */
+
+.pricing .card{
+    border: 0px;
+}
+
+.pricing .card-header{
+    color: var(--color-white);
+    background-color: var(--tab-bgcolor);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.375rem 0;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.pricing .price-details{
+    background-color: var(--tab-bgcolor);
+    color: var(--color-white);
+    padding: 1.75rem 0 1.5rem;
+    border-bottom: 5px solid var(--color-primary);
+}
+
+.plan-price{
+    font-size: 2.25rem;
+}
+
+.plan-price span{
+    font-size: 5.938rem;
+    transform: translateX(-10px);
+    display: inline-block;
+}
+
+.time-span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.plan-offering li{
+    font-size: 14px;
+    color: var(--color-text-sec);
+    border: 0px;
+}
+
+.plan-offering li:not(:last-child){
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.mostPopular  .price-details{
+    border: 0;
+}
+
+.mostPopular .popularInfo{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-size: 14px;
+    
+}

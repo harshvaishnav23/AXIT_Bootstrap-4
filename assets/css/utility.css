@@ -26,6 +26,12 @@
     text-transform: capitalize;
 }
 
+.tri-heading{
+    color: var(--color-text-pri);
+    font-size: 500;
+    text-transform: capitalize;
+}
+
 .para{
     color: var(--color-text-sec);
 }
@@ -53,7 +59,13 @@
     background-color: var(--color-primary);
 }
 
+.border-center.short-border-orange::after{
+   left: 50%;
+   transform: translateX(-50%);
+}
 
-.bg-color{
+
+.bg-grey{
     background-color: var(--color-secondary);
 }
+
