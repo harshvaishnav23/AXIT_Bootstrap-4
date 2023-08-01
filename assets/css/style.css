@@ -265,6 +265,15 @@
 
 .pricing .card{
     border: 0px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all .3s ease-in-out;
+}
+
+.pricing .card:hover,
+.pricing .card:focus,
+.pricing .card:active{
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
 }
 
 .pricing .card-header{
@@ -296,6 +305,11 @@
 .time-span{
     font-size: 14px;
     font-weight: 500;
+}
+
+.plan-offering{
+    border: 0;
+    border-radius: unset;
 }
 
 .plan-offering li{
