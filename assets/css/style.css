@@ -1,4 +1,3 @@
-
 /* ###################### CSS HEADER SECTION ############################# */
 
 
@@ -74,6 +73,7 @@
 .mainHeading {
     font-size: 2.25rem;
     color: var(--color-white);
+    margin-bottom: 80px;
 }
 
 
@@ -84,7 +84,7 @@
     margin-bottom: 1.875rem;
 }
 
- .primary {
+.primary {
     padding: 15px 30px;
     background: transparent;
     color: #fff;
@@ -94,7 +94,7 @@
     z-index: 1;
 }
 
- .primary::after {
+.primary::after {
     content: '';
     position: absolute;
     top: 0;
@@ -106,9 +106,9 @@
     transition: all .5s ease-in-out;
 }
 
- .primary:hover::after,
- .primary:focus::after,
- .primary:active::after {
+.primary:hover::after,
+.primary:focus::after,
+.primary:active::after {
     width: 100%;
 }
 
@@ -142,27 +142,27 @@
 .trialForm .card-footer {
     padding: 0;
     background-color: var(--color-primary);
-   
+
 }
 
-.trialForm input{
+.trialForm input {
     border: 0px;
     border-bottom: 1px solid var(--color-placeholder);
     border-radius: 0px;
 }
 
-.trialForm input::placeholder{
+.trialForm input::placeholder {
     color: var(--color-placeholder);
 }
 
 /* ###################### CSS SOCIALICONS SECTION ############################# */
 
-.socialIcons{
+.socialIcons {
     padding: 30px 0;
     border-bottom: 2px solid var(--color-border);
 }
 
-.socialIcons i{
+.socialIcons i {
     font-size: 40px;
     color: var(--color-tri);
     transition: all .3s ease-in;
@@ -170,7 +170,7 @@
 
 .socialIcons i:hover,
 .socialIcons i:focus,
-.socialIcons i:active{
+.socialIcons i:active {
     color: var(--color-primary);
     transform: scale(1.2);
 }
@@ -191,30 +191,30 @@
     height: 100%;
 }
 
-.featureTab li.nav-item{
+.featureTab li.nav-item {
     flex: 0 0 100%;
 }
 
-.features1 .nav-link.active{
+.features1 .nav-link.active {
     background-color: var(--color-primary);
 }
 
-.features1 .tab-content{
+.features1 .tab-content {
     padding-left: 100px;
 }
 
 
-.features1 .tab-content h3{
-   margin-bottom: 60px;
+.features1 .tab-content h3 {
+    margin-bottom: 60px;
 }
 
-.tab-content .secondary{
+.secondary {
     border-radius: 3px;
     border: 2px solid var(--color-primary);
-     transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
-.features1 .secondary:hover{
+.secondary:hover {
     color: var(--color-primary);
     background-color: var(--color-white);
     transform: translateY(-2px);
@@ -224,19 +224,20 @@
 
 /* ###################### CSS SUB LIST FEATURE 2 SECTION ############################# */
 
-.featureImg{
+.featureImg {
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
     transition: all .2s ease-in-out;
+    max-width: 100%;
 }
 
 .featureImg:hover,
 .featureImg:focus,
-.featureImg:active{
+.featureImg:active {
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-3px) scale(1.03);
 }
 
-.cloudIcon{
+.cloudIcon {
     display: inline-block;
     height: 2.5rem;
     width: 2.5rem;
@@ -246,24 +247,24 @@
     border-radius: 50%;
 }
 
-.cloudIcon i{
+.cloudIcon i {
     font-size: 1.125rem;
     color: var(--color-primary);
 }
 
-.awesome .cloudIcon{
+.awesome .cloudIcon {
     height: 4.063rem;
     width: 4.063rem;
     line-height: 4.063rem;
 }
 
-.awesome .cloudIcon i{
+.awesome .cloudIcon i {
     font-size: 1.563rem;
 }
 
 /* ###################### CSS PRICING SECTION ############################# */
 
-.pricing .card{
+.pricing .card {
     border: 0px;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
     transition: all .3s ease-in-out;
@@ -271,12 +272,12 @@
 
 .pricing .card:hover,
 .pricing .card:focus,
-.pricing .card:active{
+.pricing .card:active {
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
 }
 
-.pricing .card-header{
+.pricing .card-header {
     color: var(--color-white);
     background-color: var(--tab-bgcolor);
     font-size: 1.25rem;
@@ -285,52 +286,52 @@
     border-bottom: 1px solid var(--color-secondary);
 }
 
-.pricing .price-details{
+.pricing .price-details {
     background-color: var(--tab-bgcolor);
     color: var(--color-white);
     padding: 1.75rem 0 1.5rem;
     border-bottom: 5px solid var(--color-primary);
 }
 
-.plan-price{
+.plan-price {
     font-size: 2.25rem;
 }
 
-.plan-price span{
+.plan-price span {
     font-size: 5.938rem;
     transform: translateX(-10px);
     display: inline-block;
 }
 
-.time-span{
+.time-span {
     font-size: 14px;
     font-weight: 500;
 }
 
-.plan-offering{
+.plan-offering {
     border: 0;
     border-radius: unset;
 }
 
-.plan-offering li{
+.plan-offering li {
     font-size: 14px;
     color: var(--color-text-sec);
     border: 0px;
 }
 
-.plan-offering li:not(:last-child){
+.plan-offering li:not(:last-child) {
     border-bottom: 1px solid var(--color-secondary);
 }
 
-.mostPopular  .price-details{
+.mostPopular .price-details {
     border: 0;
 }
 
-.mostPopular .popularInfo{
+.mostPopular .popularInfo {
     color: var(--color-white);
     background-color: var(--color-primary);
     font-size: 14px;
-    
+
 }
 
 /* .shape{
@@ -363,11 +364,11 @@
 /* ###################### CSS FEEDBACKCARD SECTION ############################# */
 
 
-.feedbackCard{
+.feedbackCard {
     width: 90%;
 }
 
-.feedbackCard blockquote{
+.feedbackCard blockquote {
     background-color: var(--color-secondary);
     padding: 2rem 1rem;
     border-radius: 5px;
@@ -377,20 +378,20 @@
     font-weight: lighter;
 }
 
-.feedbackCard blockquote::before{
+.feedbackCard blockquote::before {
     content: '';
     /* display: inline-block; */
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color:  var(--color-secondary);
+    background-color: var(--color-secondary);
     bottom: -10px;
     z-index: -1;
     /* top: calc(100% - 10px); */
     transform: rotate(45deg);
 }
 
-.feedbackCard small{
+.feedbackCard small {
     font-size: 14px;
     color: #8e8f92;
 }
@@ -404,4 +405,126 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+/* ###################### CSS CONTACT SECTION ############################# */
+
+
+.message-group {
+    height: calc(100% - 1rem);
+}
+
+.message-group textarea {
+    height: 100%;
+}
+
+#contactForm .form-group{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+#contactForm .form-control:placeholder-shown ~ label{
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+
+#contactForm .form-control ~ label{
+    position: absolute;
+    top: -17px;
+    left: 0;
+    transition: all .4s ease-in-out;
+    opacity: 1;
+}
+
+#contactForm .form-control ~ small{
+    display: none;
+}
+
+#contactForm .form-control:focus:invalid ~ small{
+    display: block;
+    position: absolute;
+}
+
+
+#contactForm .form-control {
+    border: 0px;
+    border-radius: unset;
+    border-bottom: 2px solid var(--color-border);
+    outline: none;
+    box-shadow: none;
+}
+
+#contactForm .form-control:focus{
+    border-bottom: 2px solid yellowgreen;
+}
+
+#contactForm .form-control:focus:invalid{
+    border-bottom: 2px solid orangered;
+}
+
+#contactForm .form-control::placeholder {
+    color: var(--color-placeholder);
+}
+
+/* ###################### CSS FOOTER SECTION ############################# */
+
+.footer {
+    background-color: var(--color-dark);
+    padding: 20px 0;
+}
+
+.footer .socialIcons {
+    border-bottom: none;
+}
+
+.footer .socialIcons i {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+
+
+/* ################ Media Query CSS ###################*/
+
+@media screen and (max-width: 768px) {
+    .heroImg {
+        height: auto;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .heroImgPara {
+        margin-bottom: 1rem;
+    }
+
+    .short-border::after {
+        bottom: -30px;
+    }
+    .mainHeading{
+        margin-bottom: 60px;
+    }
+    
+    .featureTab li.nav-item {
+        flex: 1 0 auto;
+        border-radius: unset !important;
+    }
+    .features1 .tab-content {
+        padding-left: 0;
+    }
+    .footer .socialIcons i {
+        padding: 0 0.5rem;
+    }
+    .socialIcons {
+        padding:  0;
+        margin-bottom: 1rem;
+    }
 }
