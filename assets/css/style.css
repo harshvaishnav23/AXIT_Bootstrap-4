@@ -84,7 +84,7 @@
     margin-bottom: 1.875rem;
 }
 
-.heroInfo .primary {
+ .primary {
     padding: 15px 30px;
     background: transparent;
     color: #fff;
@@ -94,7 +94,7 @@
     z-index: 1;
 }
 
-.heroInfo .primary::after {
+ .primary::after {
     content: '';
     position: absolute;
     top: 0;
@@ -106,9 +106,9 @@
     transition: all .5s ease-in-out;
 }
 
-.heroInfo .primary:hover::after,
-.heroInfo .primary:focus::after,
-.heroInfo .primary:active::after {
+ .primary:hover::after,
+ .primary:focus::after,
+ .primary:active::after {
     width: 100%;
 }
 
@@ -331,4 +331,77 @@
     background-color: var(--color-primary);
     font-size: 14px;
     
+}
+
+/* .shape{
+    background-color: var(--color-secondary);
+    position: relative;
+}
+
+.shape::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 15px solid #f5f5f5 !important;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    bottom: 0;
+    top: 100%;
+} */
+
+/* .downTriangle{
+    height: 0;
+    width: 0;
+    border-top: 15px solid var(--color-secondary);
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+} */
+
+/* ###################### CSS FEEDBACKCARD SECTION ############################# */
+
+
+.feedbackCard{
+    width: 90%;
+}
+
+.feedbackCard blockquote{
+    background-color: var(--color-secondary);
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+    font-weight: lighter;
+}
+
+.feedbackCard blockquote::before{
+    content: '';
+    /* display: inline-block; */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:  var(--color-secondary);
+    bottom: -10px;
+    z-index: -1;
+    /* top: calc(100% - 10px); */
+    transform: rotate(45deg);
+}
+
+.feedbackCard small{
+    font-size: 14px;
+    color: #8e8f92;
+}
+
+/* ###################### CSS DESIGN SECTION ############################# */
+
+.design {
+    /* height: calc(100vh - 57.7px); */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/axdesign.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
