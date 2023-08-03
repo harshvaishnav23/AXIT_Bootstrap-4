@@ -512,6 +512,10 @@
     .mainHeading{
         margin-bottom: 60px;
     }
+
+    .featureTab{
+        flex-direction: row;
+    }
     
     .featureTab li.nav-item {
         flex: 1 0 auto;
